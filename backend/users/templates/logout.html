@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" >
+            {% csrf_token %}
+            <legend class="border-bottom mb-4" >Click To Logout!</legend>
+            <div class="form-group">
+                <button class="btn btn-outline-danger " type="submit">Logout</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
